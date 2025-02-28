@@ -1,0 +1,38 @@
+{
+  "name": "utxo-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "merge": "npx tsx UTXO_merge",
+    "send": "npx tsx UTXO_send",
+    "split": "npx tsx UTXO_split"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bitcoinerlab/secp256k1": "^1.1.1",
+    "@mempool/mempool.js": "^2.3.0",
+    "@ordjs/runestone": "^1.6.0",
+    "axios": "^1.7.7",
+    "bip32": "^4.0.0",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^6.1.5",
+    "body-parser": "^1.20.3",
+    "cbor": "^9.0.2",
+    "dotenv": "^16.3.2",
+    "ecpair": "^2.1.0",
+    "express": "^4.21.1",
+    "runelib": "^1.0.6",
+    "runestone-js": "^0.3.0",
+    "tiny-secp256k1": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.11.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
